@@ -69,7 +69,7 @@
 <meta property="og:image" content="https://leosyhsu.github.io/2019/09/18/How%20to%20use%20C++%20with%20.NET%20framework/setting1.png">
 <meta property="og:image" content="https://leosyhsu.github.io/2019/09/18/How%20to%20use%20C++%20with%20.NET%20framework/setting2.png">
 <meta property="og:image" content="https://leosyhsu.github.io/2019/09/18/How%20to%20use%20C++%20with%20.NET%20framework/finish.png">
-<meta property="og:updated_time" content="2019-09-18T11:21:45.604Z">
+<meta property="og:updated_time" content="2019-09-18T23:42:37.406Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to use C++ with .NET framewok(C++&#x2F;CLI)">
 <meta name="twitter:description" content="If you want to use C++ on .NET framework , you can follow the steps in this article.">
@@ -266,12 +266,33 @@
                 
               
 
-              <time title="Created: 2019-09-18 13:28:04 / Modified: 19:21:45" itemprop="dateCreated datePublished" datetime="2019-09-18T13:28:04+08:00">2019-09-18</time>
+              <time title="Created: 2019-09-18 13:28:04" itemprop="dateCreated datePublished" datetime="2019-09-18T13:28:04+08:00">2019-09-18</time>
             </span>
           
             
 
             
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-09-19 07:42:37" itemprop="dateModified" datetime="2019-09-19T07:42:37+08:00">2019-09-19</time>
+              </span>
+            
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/C/" itemprop="url" rel="index"><span itemprop="name">C++</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -291,8 +312,8 @@
 <h2 id="Add-gt-New-Item"><a href="#Add-gt-New-Item" class="headerlink" title="Add &gt; New Item"></a>Add &gt; New Item</h2><p>Select <code>CLR - Windows Form</code><br><img src="new_item.png" alt></p>
 <hr>
 <h2 id="Setting-project-properties"><a href="#Setting-project-properties" class="headerlink" title="Setting project properties"></a>Setting project properties</h2><p>Project &gt; Properties </p>
-<h4 id="Linker-gt-System-gt-SubSystem"><a href="#Linker-gt-System-gt-SubSystem" class="headerlink" title="Linker &gt; System &gt; SubSystem"></a>Linker &gt; System &gt; SubSystem</h4><p>Select <code>WINDOWS(/SUBSYSTEM:WINDOWS)</code><br><img src="setting1.png" alt></p>
-<h4 id="Linker-gt-Advanced-gt-Entry-Point"><a href="#Linker-gt-Advanced-gt-Entry-Point" class="headerlink" title="Linker &gt; Advanced &gt; Entry Point"></a>Linker &gt; Advanced &gt; Entry Point</h4><p>Enter <code>main</code><br><img src="setting2.png" alt></p>
+<h3 id="Linker-gt-System-gt-SubSystem"><a href="#Linker-gt-System-gt-SubSystem" class="headerlink" title="Linker &gt; System &gt; SubSystem"></a>Linker &gt; System &gt; SubSystem</h3><p>Select <code>WINDOWS(/SUBSYSTEM:WINDOWS)</code><br><img src="setting1.png" alt></p>
+<h3 id="Linker-gt-Advanced-gt-Entry-Point"><a href="#Linker-gt-Advanced-gt-Entry-Point" class="headerlink" title="Linker &gt; Advanced &gt; Entry Point"></a>Linker &gt; Advanced &gt; Entry Point</h3><p>Enter <code>main</code><br><img src="setting2.png" alt></p>
 <hr>
 <h2 id="Open-cpp-file-and-paste-it-in"><a href="#Open-cpp-file-and-paste-it-in" class="headerlink" title="Open .cpp file and paste it in"></a>Open .cpp file and paste it in</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> System;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> System::Windows::Forms;</span><br><span class="line"></span><br><span class="line">[STAThread]</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">(<span class="built_in">array</span>&lt;String^&gt;^ args)</span> </span>&#123;</span><br><span class="line">    Application::EnableVisualStyles();</span><br><span class="line">    Application::SetCompatibleTextRenderingDefault(<span class="literal">false</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Project1 is project name</span></span><br><span class="line">    <span class="comment">// MyForm is Form.h name</span></span><br><span class="line">    Project1::MyForm form;</span><br><span class="line">    Application::Run(% form);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -368,7 +389,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Create-a-new-CLR-project"><span class="nav-number">1.</span> <span class="nav-text">Create a new CLR project</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-gt-New-Item"><span class="nav-number">2.</span> <span class="nav-text">Add &gt; New Item</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Setting-project-properties"><span class="nav-number">3.</span> <span class="nav-text">Setting project properties</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Linker-gt-System-gt-SubSystem"><span class="nav-number">3.0.1.</span> <span class="nav-text">Linker &gt; System &gt; SubSystem</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Linker-gt-Advanced-gt-Entry-Point"><span class="nav-number">3.0.2.</span> <span class="nav-text">Linker &gt; Advanced &gt; Entry Point</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Open-cpp-file-and-paste-it-in"><span class="nav-number">4.</span> <span class="nav-text">Open .cpp file and paste it in</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unload-Project-and-Reload-Project"><span class="nav-number">5.</span> <span class="nav-text">Unload Project and Reload Project</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Create-a-new-CLR-project"><span class="nav-number">1.</span> <span class="nav-text">Create a new CLR project</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-gt-New-Item"><span class="nav-number">2.</span> <span class="nav-text">Add &gt; New Item</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Setting-project-properties"><span class="nav-number">3.</span> <span class="nav-text">Setting project properties</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linker-gt-System-gt-SubSystem"><span class="nav-number">3.1.</span> <span class="nav-text">Linker &gt; System &gt; SubSystem</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Linker-gt-Advanced-gt-Entry-Point"><span class="nav-number">3.2.</span> <span class="nav-text">Linker &gt; Advanced &gt; Entry Point</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Open-cpp-file-and-paste-it-in"><span class="nav-number">4.</span> <span class="nav-text">Open .cpp file and paste it in</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Unload-Project-and-Reload-Project"><span class="nav-number">5.</span> <span class="nav-text">Unload Project and Reload Project</span></a></li></ol></div>
         
       </div>
       <!--/noindex-->
@@ -390,11 +411,28 @@
     
       
       
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span>
+        </a>
+      </div>
+    
+      
+      
       <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
         
         <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">tags</span>
-        
+        </a>
       </div>
     
   </nav>
