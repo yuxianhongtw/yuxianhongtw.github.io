@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://leosyhsu.github.io/2019/09/18/How%20to%20use%20C++%20with%20.NET%20framework/</loc>
+    
+    <lastmod>2019-09-18T09:54:59.113Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://leosyhsu.github.io/categories/index.html</loc>
     
     <lastmod>2019-09-18T02:34:17.693Z</lastmod>
@@ -19,13 +26,6 @@
     <loc>https://leosyhsu.github.io/about/index.html</loc>
     
     <lastmod>2019-09-18T02:33:01.715Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://leosyhsu.github.io/2019/09/17/hello-world/</loc>
-    
-    <lastmod>2019-09-17T08:15:09.474Z</lastmod>
     
   </url>
   
