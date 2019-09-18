@@ -68,7 +68,7 @@
 <meta property="og:image" content="https://leosyhsu.github.io/2019/09/18/How%20to%20use%20C++%20with%20.NET%20framework/setting1.png">
 <meta property="og:image" content="https://leosyhsu.github.io/2019/09/18/How%20to%20use%20C++%20with%20.NET%20framework/setting2.png">
 <meta property="og:image" content="https://leosyhsu.github.io/2019/09/18/How%20to%20use%20C++%20with%20.NET%20framework/finish.png">
-<meta property="og:updated_time" content="2019-09-18T09:54:59.113Z">
+<meta property="og:updated_time" content="2019-09-18T11:10:03.421Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to use C++ with .NET framewok(C++&#x2F;CLI)">
 <meta name="twitter:description" content="If you want to use C++ on .NET framework , you can follow the steps in this article.">
@@ -265,7 +265,7 @@
                 
               
 
-              <time title="Created: 2019-09-18 13:28:04 / Modified: 17:54:59" itemprop="dateCreated datePublished" datetime="2019-09-18T13:28:04+08:00">2019-09-18</time>
+              <time title="Created: 2019-09-18 13:28:04 / Modified: 19:10:03" itemprop="dateCreated datePublished" datetime="2019-09-18T13:28:04+08:00">2019-09-18</time>
             </span>
           
             
@@ -287,13 +287,13 @@
         <p>If you want to use C++ on .NET framework , you can follow the steps in this article.<br> <a id="more"></a></p>
 <h2 id="Create-a-new-CLR-project"><a href="#Create-a-new-CLR-project" class="headerlink" title="Create a new CLR project"></a>Create a new CLR project</h2><p><img src="open_CLR_project.png" alt><br><img src="create_project.png" alt></p>
 <hr>
-<h2 id="Add-gt-New-Item"><a href="#Add-gt-New-Item" class="headerlink" title="Add &gt; New Item"></a>Add &gt; New Item</h2><p>Select CLR - Windows Form<br><img src="new_item.png" alt></p>
+<h2 id="Add-gt-New-Item"><a href="#Add-gt-New-Item" class="headerlink" title="Add &gt; New Item"></a>Add &gt; New Item</h2><p>Select <code>CLR - Windows Form</code><br><img src="new_item.png" alt></p>
 <hr>
 <h2 id="Setting-project-properties"><a href="#Setting-project-properties" class="headerlink" title="Setting project properties"></a>Setting project properties</h2><p>Project &gt; Properties </p>
-<h3 id="Linker-gt-System-gt-SubSystem"><a href="#Linker-gt-System-gt-SubSystem" class="headerlink" title="Linker &gt; System &gt; SubSystem"></a>Linker &gt; System &gt; SubSystem</h3><p>Select WINDOWS(/SUBSYSTEM:WINDOWS)<br><img src="setting1.png" alt></p>
-<h3 id="Linker-gt-Advanced-gt-Entry-Point"><a href="#Linker-gt-Advanced-gt-Entry-Point" class="headerlink" title="Linker &gt; Advanced &gt; Entry Point"></a>Linker &gt; Advanced &gt; Entry Point</h3><p>Enter main<br><img src="setting2.png" alt></p>
+<h3 id="Linker-gt-System-gt-SubSystem"><a href="#Linker-gt-System-gt-SubSystem" class="headerlink" title="Linker &gt; System &gt; SubSystem"></a>Linker &gt; System &gt; SubSystem</h3><p>Select <code>WINDOWS(/SUBSYSTEM:WINDOWS)</code><br><img src="setting1.png" alt></p>
+<h3 id="Linker-gt-Advanced-gt-Entry-Point"><a href="#Linker-gt-Advanced-gt-Entry-Point" class="headerlink" title="Linker &gt; Advanced &gt; Entry Point"></a>Linker &gt; Advanced &gt; Entry Point</h3><p>Enter <code>main</code><br><img src="setting2.png" alt></p>
 <hr>
-<h2 id="Open-cpp-file-and-paste-it-in"><a href="#Open-cpp-file-and-paste-it-in" class="headerlink" title="Open .cpp file and paste it in"></a>Open .cpp file and paste it in</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">using namespace System;</span><br><span class="line">using namespace System::Windows::Forms;</span><br><span class="line"></span><br><span class="line">[STAThread]</span><br><span class="line">void main(array&lt;String^&gt;^ args) &#123;</span><br><span class="line">    Application::EnableVisualStyles();</span><br><span class="line">    Application::SetCompatibleTextRenderingDefault(<span class="literal">false</span>);</span><br><span class="line"></span><br><span class="line">    // Project1 is project name</span><br><span class="line">    // MyForm is Form.h name</span><br><span class="line">    Project1::MyForm form;</span><br><span class="line">    Application::Run(% form);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Open-cpp-file-and-paste-it-in"><a href="#Open-cpp-file-and-paste-it-in" class="headerlink" title="Open .cpp file and paste it in"></a>Open .cpp file and paste it in</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">using namespace System;</span><br><span class="line">using namespace System::Windows::Forms;</span><br><span class="line"></span><br><span class="line">[STAThread]</span><br><span class="line">void main(array&lt;String^&gt;^ args) &#123;</span><br><span class="line">    Application::EnableVisualStyles();</span><br><span class="line">    Application::SetCompatibleTextRenderingDefault(false);</span><br><span class="line"></span><br><span class="line">    // Project1 is project name</span><br><span class="line">    // MyForm is Form.h name</span><br><span class="line">    Project1::MyForm form;</span><br><span class="line">    Application::Run(% form);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <hr>
 <h2 id="Unload-Project-and-Reload-Project"><a href="#Unload-Project-and-Reload-Project" class="headerlink" title="Unload Project and Reload Project"></a>Unload Project and Reload Project</h2><p>It is work!<br><img src="finish.png" alt></p>
