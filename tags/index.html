@@ -56,13 +56,13 @@
 </script>
 
   <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
+<meta property="og:title" content="All tags">
 <meta property="og:url" content="https://leosyhsu.github.io/tags/index.html">
 <meta property="og:site_name" content="TRIAL AND ERROR">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-18T11:27:39.955Z">
+<meta property="og:updated_time" content="2020-01-09T10:20:18.820Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
+<meta name="twitter:title" content="All tags">
   <link rel="canonical" href="https://leosyhsu.github.io/tags/">
 
 
@@ -77,7 +77,7 @@
   };
 </script>
 
-  <title>tags | TRIAL AND ERROR</title>
+  <title>All tags | TRIAL AND ERROR</title>
   
 
 
@@ -246,7 +246,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">tags
+<h1 class="post-title" itemprop="name headline">All tags
 
 </h1>
 
@@ -264,11 +264,11 @@
         
           <div class="tag-cloud">
             <div class="tag-cloud-title">
-              2 tags in total
+              1 tag in total
             </div>
             <div class="tag-cloud-tags">
               
-                <a href="/tags/C/" style="font-size: 12px; color: #ccc">C++</a> <a href="/tags/日本語/" style="font-size: 12px; color: #ccc">日本語</a>
+                <a href="/tags/架設Hexo/" style="font-size: 12px; color: #ccc">架設Hexo</a>
               
             </div>
           </div>
@@ -288,6 +288,9 @@
 
           </div>
           
+    
+    <div class="comments" id="gitalk-container"></div>
+  
 
         </div>
           
@@ -339,26 +342,13 @@
     
       
       
-      <div class="site-state-item site-state-categories">
-        
-          
-            <a href="/categories/">
-          
-        
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">categories</span>
-        </a>
-      </div>
-    
-      
-      
       <div class="site-state-item site-state-tags">
         
           
             <a href="/tags/">
           
         
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">tags</span>
         </a>
       </div>
@@ -403,7 +393,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -498,6 +488,24 @@
 
   
 
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+<script>
+  NexT.utils.getScript('https://unpkg.com/gitalk/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID: 'd3ffbe84d461b28ed472',
+      clientSecret: 'cb1bca540119efa9dee9089ffee3a2a42d48a28e',
+      repo: 'LeosyHsu.github.io',
+      owner: 'LeosyHsu',
+      admin: ['LeosyHsu'],
+      id: 'f47af1d1eda4d807b02bba32be15120b',
+        language: 'en,zh-tw',
+      
+      distractionFreeMode: 'true'
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+</script>
 
 </body>
 </html>
